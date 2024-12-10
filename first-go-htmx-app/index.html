@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>First Go HTMX app</title>
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  </head>
+  <body>
+    <h1>Go 🩷 HTMX</h1>
+    <h2>{{ .Message }}</h2>
+    <button hx-get="/quote" hx-target="#quote">Quote of the day</button>
+    <h2 id="quote">The quote is:</h2>
+  </body>
+</html>
